@@ -154,7 +154,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     private func moveRocket() {
         enumerateChildNodes(withName: "Rocket", using: ({
             (node, error) in
-            node.position.x -= 5;
+            node.position.x -= 4;
         }))
     }
     
