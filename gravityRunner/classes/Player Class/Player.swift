@@ -42,7 +42,7 @@ class Player: SKSpriteNode {
     }
     
     func move() {
-        self.position.x += 15;
+        self.position.x += 10;
     }
     
     func reversePlayer() {
