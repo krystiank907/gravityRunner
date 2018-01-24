@@ -114,7 +114,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
     
     private func manageCamera() {
-        self.mainCamera?.position.x += 15;
+        self.mainCamera?.position.x += 10;
     }
     
     private func manageBGsAndGrounds() {
@@ -143,10 +143,8 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     
     @objc func restartGame() {
         if let scene = GameplayScene(fileNamed: "GameplayScene") {
-            // Set the scale mode to scale to fit the window
             scene.scaleMode = .aspectFill
             
-            // Present the scene
             view!.presentScene(scene, transition: SKTransition.doorsOpenVertical(withDuration: TimeInterval(1)));
         }
     }
@@ -154,7 +152,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     private func moveRocket() {
         enumerateChildNodes(withName: "Rocket", using: ({
             (node, error) in
-            node.position.x -= 5;
+            node.position.x -= 4;
         }))
     }
     
