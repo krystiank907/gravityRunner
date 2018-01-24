@@ -114,7 +114,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
     
     private func manageCamera() {
-        self.mainCamera?.position.x += 10;
+        self.mainCamera?.position.x += 11;
     }
     
     private func manageBGsAndGrounds() {
