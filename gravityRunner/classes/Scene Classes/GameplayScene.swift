@@ -28,6 +28,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     
     private var scoreLabel: SKLabelNode?;
     private var score = 0;
+    var info = true;
     
     private var itemContoller = ItemController();
     
