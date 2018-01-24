@@ -28,6 +28,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     
     private var scoreLabel: SKLabelNode?;
     private var score = 0;
+    var info = true;
     
     private var itemContoller = ItemController();
     
@@ -143,10 +144,8 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     
     @objc func restartGame() {
         if let scene = GameplayScene(fileNamed: "GameplayScene") {
-            // Set the scale mode to scale to fit the window
             scene.scaleMode = .aspectFill
             
-            // Present the scene
             view!.presentScene(scene, transition: SKTransition.doorsOpenVertical(withDuration: TimeInterval(1)));
         }
     }
